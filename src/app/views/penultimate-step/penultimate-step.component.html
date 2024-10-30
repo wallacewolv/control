@@ -1,0 +1,14 @@
+<div class="step">
+  <h2>Penultimate Step: Boletagem Info</h2>
+  <label for="registration">Registration:</label>
+  <input type="text" id="registration" [(ngModel)]="registration" />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="email" />
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" [(ngModel)]="date" />
+
+  <button (click)="previous.emit()">Previous</button>
+  <button (click)="proceed()" [disabled]="!registration || !email || !date">Next</button>
+</div>

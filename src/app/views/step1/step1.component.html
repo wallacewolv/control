@@ -1,0 +1,10 @@
+<div class="step">
+  <h2>Step 1: Select Category</h2>
+  <label>
+    <input type="radio" name="category" (change)="selectCategory('Derivatives')" /> Derivatives
+  </label>
+  <label>
+    <input type="radio" name="category" (change)="selectCategory('Equity')" /> Equity
+  </label>
+  <button (click)="proceed()" [disabled]="!category">Next</button>
+</div>

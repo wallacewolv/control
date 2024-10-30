@@ -1,0 +1,8 @@
+<div class="step">
+  <h2>Instrument Step</h2>
+  <label for="instrument">Add Instrument:</label>
+  <input type="text" id="instrument" #instrumentInput />
+  <button (click)="addInstrument(instrumentInput.value); instrumentInput.value=''">Add Instrument</button>
+  <button (click)="previous.emit()">Previous</button>
+  <button (click)="proceed()">Next</button>
+</div>

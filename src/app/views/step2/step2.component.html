@@ -1,0 +1,14 @@
+<div class="step">
+  <h2>Step 2: Select Structure</h2>
+  <label>
+    <input type="radio" name="structure" (change)="selectStructure('ndf')" /> NDF
+  </label>
+  <label>
+    <input type="radio" name="structure" (change)="selectStructure('commodity')" /> Commodity
+  </label>
+  <label>
+    <input type="radio" name="structure" (change)="selectStructure('other')" /> Other
+  </label>
+  <button (click)="previous.emit()">Previous</button>
+  <button (click)="proceed()" [disabled]="!structure">Next</button>
+</div>

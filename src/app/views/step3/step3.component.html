@@ -1,0 +1,11 @@
+<div class="step">
+  <h2>Step 3: Select Boletagem Method</h2>
+  <label>
+    <input type="radio" name="method" (change)="selectMethod('manual')" /> Manual
+  </label>
+  <label>
+    <input type="radio" name="method" (change)="selectMethod('spreadsheet')" /> Spreadsheet
+  </label>
+  <button (click)="previous.emit()">Previous</button>
+  <button (click)="proceed()">Next</button>
+</div>
